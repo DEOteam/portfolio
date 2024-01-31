@@ -1,0 +1,195 @@
+.lenguaje{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.lenguaje h1{
+    margin-bottom: 1rem;
+}
+
+.lenguaje-content{
+    display: grid;
+    height: 100px;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 50px;
+}
+
+.lenguaje-icon{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 90px;
+    transition: 0.3s all;
+}
+
+.lenguaje-icon:hover{
+    height: 120px;
+}
+
+.tech-icon{    
+    background: rgb(13 104 125 / 15%);
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(77 104 233);
+}
+.lenguaje-icon img{
+    width: 100%;
+    height: 50px;
+    /* height: 20px; */
+    object-fit: contain;
+}
+.lenguaje-icon:hover img{
+    height: 60px;
+}
+
+.lenguaje-icon .lenguaje-text{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.lenguaje-icon:hover .lenguaje-text{
+    display: flex;
+}
+
+.lenguaje-icon span{
+    white-space: nowrap;
+    border-right: 2px solid;
+}
+@keyframes teclear{
+    from{
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+@keyframes border{
+    50%{
+        border-color: transparent;
+    }
+}
+
+/*CURRICULUM*/
+
+.integrantes{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.integrantes h1{
+    margin-bottom: 1rem;
+}
+
+.cv{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 70px;
+        grid-row-gap: 50px;
+}
+
+.cv-content{
+    background-color: #121214;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.cv-content:nth-child(1){
+    box-shadow:inset 0 0 2px 1px #7d60ff, 0 20px 25px -5px rgba(28, 24, 31, 0.8), 0 8px 8px -5px rgba(39, 29, 41, 0.9);
+}
+.cv-content:nth-child(2){
+    box-shadow:inset 0 0 2px 1px #04ad15, 0 20px 25px -5px rgba(22, 27, 22, 0.8), 0 8px 8px -5px rgba(38, 46, 35, 0.9);
+}
+
+.image-profile{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-profile img{
+    max-height: 250px;
+}
+
+.info-profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc-profile{
+    display: flex;
+    flex-direction: column;
+}
+
+.desc-profile h2{
+    margin: 7px 0;
+}
+.desc-profile h4{
+    margin: 14px 0;
+    max-width: 500px;
+}
+.desc-profile ul{
+    display: grid;
+    text-align: left;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    text-wrap: nowrap;
+    color: #d6d6d6;
+}
+
+.links-profile{
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.links-profile button{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: transparent;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 18px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.links-profile button:hover{
+    transform: translateY(-4px);
+    font-size: 19px;
+}
+
+.cv-content.violet .links-profile button{
+    background: linear-gradient(135deg, #7c61ff, #6f56e4, #614bc9, #5541af, #483796);
+    border: 2px solid #7c61ff;
+}
+
+.cv-content.green .links-profile button{
+    background: linear-gradient(135deg, #33bb02, #2ea802, #299502, #248302, #1f7102);
+    border: 2px solid #33bb02;
+}
+
+.links-profile button img{
+    display: flex;
+    justify-content: center;
+    height: 18px;
+    margin-right: 5px;
+}

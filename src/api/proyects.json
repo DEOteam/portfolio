@@ -1,0 +1,66 @@
+{
+    "proyects":[{
+        "id":"pro1",
+        "thumbnail": "img/paisaje3.jpg",
+        "skill1": "icons/html-5.png",
+        "skill2": "icons/js.png",
+        "skill3": "icons/php.png",
+        "title": "proyecto1"
+    },
+    {
+        "id":"pro2",
+        "thumbnail": "img/paisaje4.jpg",
+        "skill1": "icons/react.png",
+        "skill2": "icons/nodejs.png",
+        "skill3": "icons/next.png",
+        "title": "proyecto2"
+    },
+    {
+        "id":"pro3",
+        "thumbnail": "img/paisaje5.jpg",
+        "skill1": "icons/html-5.png",
+        "skill2": "icons/css-3.png",
+        "skill3": "icons/js.png",
+        "title": "proyecto3"
+    },
+    {
+        "id":"pro4",
+        "thumbnail": "img/paisaje6.jpg",
+        "skill1": "icons/css-3.png",
+        "skill2": "icons/js.png",
+        "skill3": "icons/react.png",
+        "title": "proyecto4"
+    },
+    {
+        "id":"pro5",
+        "thumbnail": "img/paisaje7.jpg",
+        "skill1": "icons/css-3.png",
+        "skill2": "icons/react.png",
+        "skill3": "icons/nodejs.png",
+        "title": "proyecto5"
+    },
+    {
+        "id":"pro6",
+        "thumbnail": "img/paisaje8.jpg",
+        "skill1": "icons/html-5.png",
+        "skill2": "icons/css-3.png",
+        "skill3": "icons/js.png",
+        "title": "proyecto6"
+    },
+    {
+        "id":"pro7",
+        "thumbnail": "img/paisaje9.jpg",
+        "skill1": "icons/html-5.png",
+        "skill2": "icons/js.png",
+        "skill3": "icons/php.png",
+        "title": "proyecto7"
+    },
+    {
+        "id":"pro8",
+        "thumbnail": "img/paisaje10.jpg",
+        "skill1": "icons/react.png",
+        "skill2": "icons/nodejs.png",
+        "skill3": "icons/next.png",
+        "title": "proyecto8"
+    }]
+}

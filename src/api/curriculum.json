@@ -1,0 +1,25 @@
+{
+    "curriculum":[{
+        "id": "leo",
+        "thumbnail":"public/img/leo.png",
+        "nombre": "Leonel Valenzuela",
+        "desc": "Soy programador web fullstack y me encargo del lado de la produccion",
+        "espe1":"- Desarrolo de aplicaciones",
+        "espe2": "- Modelacion 3D",
+        "espe3": "- Analisis y solucion de problemas", 
+        "cv": "dowload",
+        "portafolio":"portafolio"
+    },
+    {
+        "id": "sabri",
+        "thumbnail":"img/sabri.png",
+        "nombre": "Sabrina Pedrozo",
+        "desc": "Soy programador Frontend y diseñadora grafica",
+        "espe1":"- Diseñadora de paginas web",
+        "espe2": "- Creatividad en el diseño grafico",
+        "espe3": "- Buena comunicación e informante", 
+        "cv": "dowload",
+        "portafolio":"portafolio"
+    }
+    ]
+}

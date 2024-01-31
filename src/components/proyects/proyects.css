@@ -1,0 +1,121 @@
+.tabs-content{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.proyectos{
+    margin: 1rem 0;
+    background-color: #1C1C27;
+    box-shadow: 1px -1px 25px -4px rgba(0,0,0,0.25);
+}
+.proyectos h1{
+    margin-bottom: 1rem;
+}
+
+.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #121214;
+    border-radius: 20px;
+    box-shadow:  0 0 2px 1px #306EE8, 0 20px 25px -5px rgba(28, 24, 31, 0.8), 0 8px 8px -5px rgba(39, 29, 41, 0.9);
+    font-size: 22px;
+}
+
+.tabs-item{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+.tabs-item:hover{
+    background-color: #4d67e946;
+}
+ .tabs-item:nth-child(1){
+    border-radius: 20px 0px 0px 20px;
+}
+.tabs-item:nth-child(2){
+    border-radius: 0px 20px 20px 0;
+}
+/*.tabs-item:nth-child(3){
+    border-radius: 0px 10px 0 0;
+} */
+.tabs-item.active{
+    background-color: #306EE8;
+}
+
+
+.proyect-position{
+    width: 100%;
+    padding: 1.2rem 0;
+    /* box-shadow:  0 0 2px 1px #6749ff, 0 20px 25px -5px rgba(28, 24, 31, 0.8), 0 8px 8px -5px rgba(39, 29, 41, 0.9); */
+}
+
+.proyects-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 35px;
+}
+
+.proyects-content .proyect-card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121214;
+    border-radius: 20px;
+    box-shadow: 1px -1px 25px -4px rgba(24, 23, 39, 0.25);
+    animation: moving .5s ease;
+    cursor: pointer;
+}
+
+@keyframes moving{
+    from{transform: translateY(-10px);opacity: 0;}
+    to{transform: translateY(0px);opacity: 1;}
+}
+
+.proyects-content .proyect-card .img-proyect{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.proyects-content .proyect-card .img-proyect .imagen-proyect{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0; 
+}
+
+.proyect-skils{
+    background-color: #306EE8;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    bottom: 0;
+    padding: 5px 10px;
+    border-top-right-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.proyect-skils img{
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
+    object-fit: cover;
+}
+
+.proyect-info{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: left;
+}
+.proyect-info p{
+    color: #d6d6d6;
+    margin-top: 6px;
+}
