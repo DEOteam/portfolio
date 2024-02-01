@@ -1,7 +1,7 @@
 {
     "curriculum":[{
         "id": "leo",
-        "thumbnail":"public/img/leo.png",
+        "thumbnail":"img/leo.png",
         "nombre": "Leonel Valenzuela",
         "desc": "Soy programador web fullstack y me encargo del lado de la produccion",
         "espe1":"- Desarrolo de aplicaciones",
