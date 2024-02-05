@@ -1,0 +1,17 @@
+.footer{
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.content-footer{
+    max-width: 1200px ;
+}
+
+.header-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-footer .logo-footer img{
+    width: 100px;
+}
