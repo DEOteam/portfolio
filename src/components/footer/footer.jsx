@@ -1,4 +1,6 @@
-import { useState } from 'react'
+import { useState,useEffect,useRef} from 'react'
+
+import { LinksFooter } from './links-footer'
 
 import './footer.css'
 
@@ -25,6 +27,22 @@ const Redes = ({link, icon})=>{
 
 export function Footer(){
 
+    //lenguaje
+const [menuVisible, setMenuVisible] = useState(false)
+const [selectedLanguage, setSelectedLanguage] = useState('Español');
+
+   const MouseMenuView =()=>{
+        setMenuVisible(!menuVisible)
+   }
+
+   const handleLanguageChange = (language) => {
+    setSelectedLanguage(language);
+    setMenuVisible(false); // Cerrar el menú después de seleccionar un idioma
+    // Aquí puedes agregar lógica para cambiar el idioma de tu aplicación si es necesario
+};
+
+
+    //form email
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
   
@@ -50,7 +68,7 @@ export function Footer(){
                 <a className='logo-footer'><img src="./img/deo.png" alt="" />DEO</a>
                 <form className='form-footer' onSubmit={handleSubmit}>
                     <input type="email" required placeholder='Correo' value={email} onChange={handleEmailChange}/>
-                    <input type="text" required placeholder='Asunto' value={subject} onChange={handleSubjectChange}/>
+                    <textarea type="text" required placeholder='Asunto' value={subject} onChange={handleSubjectChange}/>
                     <button type="submit">Enviar</button>
                 </form>
                 <div className='redes-footer'>
@@ -61,41 +79,61 @@ export function Footer(){
             </div>
 
             <div className='right-footer'>
-                <div className="links-footer">
-                    <h2>Contactos</h2>
-                    <ul>
-                    <li>deo.team2024@gmail.com</li>
-                    <li></li>
-                    <li></li>
-                    </ul>
-                </div>
-                <div className="links-footer">
-                    <h2>Politicas</h2>
-                    <ul>
-                         <li>Politicas de privacidad</li>
-                        <li>Notificaciones</li>
-                        <li>Cookies</li>
-                    </ul>
-                </div>
-                <div className="links-footer">
-                    <h2>Compania</h2>
-                    <ul>
-                        <li>Nosotros</li>
-                        <li>Integrantes</li>
-                        <li>Documentación</li>
-                    </ul>
-                </div>
+                    <LinksFooter />
+                    {/* <LinksFooter footerData={footerData}/> */}
             </div>
         </section>
         <section className='end-footer'>
                 <div className='text-copy'><p>© 2024 DEO. Derechos reservados.</p></div>
                 <div className='select-language'>
-                    <button>Español <img src="./icons/flecha-derecha.png" alt="flecha-derecha.png" /></button>
-                    <div className='language-list'>
-
-                    </div>
+                    <button onClick={MouseMenuView}>{selectedLanguage}<img src="./icons/flecha-derecha.png" alt="flecha-derecha.png" /></button>
+                    <ul className={`language-list ${menuVisible ? 'active' : ''}`}>
+                        <li onClick={() => handleLanguageChange('Español')}>Español</li>
+                        <hr />
+                        <li onClick={() => handleLanguageChange('English')}>English</li>
+                    </ul>
                 </div>
             </section>
     </footer>
     )
 }
+
+// const footerData = {
+//     "contactos":{
+//         title: 'Contactos',
+//         "link1": {
+//             paragraph:'deo.team2024@gmail.com',
+//             link: '/portfolio'
+//         }
+//     },
+//     "politicas":{
+//         title: 'Politicas',
+//         "link1": {
+//             paragraph:'Politicas de privacidad',
+//             link: '/portfolio'
+//         },
+//         "link2": {
+//             paragraph:'Notificaciones',
+//             link: '/portfolio'
+//         },
+//         "link3": {
+//             paragraph:'Cookies',
+//             link: '/portfolio'
+//         }
+//     },
+//     "compania":{
+//         title: 'Compania',
+//         "link1": {
+//             paragraph:'Nosotros',
+//             link: '/portfolio'
+//         },
+//         "link2": {
+//             paragraph:'Integrantes',
+//             link: '/portfolio'
+//         },
+//         "link3": {
+//             paragraph:'Documentación',
+//             link: '/portfolio'
+//         }
+//     }
+// }
