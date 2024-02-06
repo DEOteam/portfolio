@@ -23,7 +23,7 @@ export function Home(){
                     <span>¿Qué es DEO? Somos una micro empresa compuesta por un equipo 2 personas que colaboran para el desarrollo y produccion de software ademas la resolución de problemas.</span>
                 </div>
 
-                <img className='leones' src='img/leones.png' alt="" />
+                <img className='leones' src='./img/leones.png' alt="" />
             </div>
         </section>
     )
