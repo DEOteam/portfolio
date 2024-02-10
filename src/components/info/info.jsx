@@ -1,16 +1,8 @@
-import { useState, useEffect } from 'react'
-
 import { Tech } from './tech'
 
 import './info.css'
 
 export function Info({curriculum}){
-
-    const [cv, setCv] = useState([])
-
-    useEffect(()=>{
-        setCv(curriculum)
-    },  [])
 
     return(
         <>
@@ -33,7 +25,7 @@ export function Info({curriculum}){
             <h1>Integrantes</h1>
 
             <div className='cv'>
-                {cv.map((cvItem, index)=>(
+                {curriculum.map((cvItem, index)=>(
                         
                         <article className={`cv-content ${index === 0 ? 'violet' : 'green'}`}  key={cvItem.id}>
                             <div className='image-profile'>

@@ -21,5 +21,29 @@
         "cv": "dowload",
         "portafolio":"portafolio"
     }
+    ],
+
+    "curriculumEnglish":[{
+        "id": "leo",
+        "thumbnail":"img/leo.png",
+        "nombre": "Leonel Valenzuela",
+        "desc": "I am a full-stack web developer and I take care of the production side.",
+        "espe1":"- Application development",
+        "espe2": "- 3D Modeling",
+        "espe3": "- Analysis and problem solving", 
+        "cv": "download",
+        "portfolio":"portfolio"
+    },
+    {
+        "id": "sabri",
+        "thumbnail":"img/sabri.png",
+        "nombre": "Sabrina Pedrozo",
+        "desc": "I am a frontend programmer and graphic designer.",
+        "espe1":"- Web page design",
+        "espe2": "- Creativity in graphic design",
+        "espe3": "- Good communication and informative", 
+        "cv": "download",
+        "portfolio":"portfolio"
+    }
     ]
 }
