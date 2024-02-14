@@ -1,6 +1,17 @@
 import './home.css'
 
-export function Home(){
+import { useLanguage } from '../../context/LanguageContext';
+
+const descripcionDEO = {
+    English: "What is DEO? We are a micro-enterprise composed of a two-person team collaborating on software development and production, as well as problem resolution.",
+    Español: "¿Qué es DEO? Somos una micro empresa compuesta por un equipo 2 personas que colaboran para el desarrollo y produccion de software ademas la resolución de problemas.",
+  };
+
+export const Home = () =>{
+
+    const { language } = useLanguage();
+    const description = descripcionDEO[language];
+
     return(
         <section className='banner' id='home'>
             <div className='banner-content'>
@@ -20,7 +31,7 @@ export function Home(){
                             <p>- Organization</p>
                         </div>
                     </div>
-                    <span>¿Qué es DEO? Somos una micro empresa compuesta por un equipo 2 personas que colaboran para el desarrollo y produccion de software ademas la resolución de problemas.</span>
+                    <span>{description}</span>
                 </div>
 
                 <img className='leones' src='./img/leones.png' alt="" />

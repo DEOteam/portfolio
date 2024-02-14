@@ -26,22 +26,6 @@ const Redes = ({link, icon})=>{
 }
 
 export function Footer(){
-
-    //lenguaje
-const [menuVisible, setMenuVisible] = useState(false)
-const [selectedLanguage, setSelectedLanguage] = useState('Español');
-
-   const MouseMenuView =()=>{
-        setMenuVisible(!menuVisible)
-   }
-
-   const handleLanguageChange = (language) => {
-    setSelectedLanguage(language);
-    setMenuVisible(false); // Cerrar el menú después de seleccionar un idioma
-    // Aquí puedes agregar lógica para cambiar el idioma de tu aplicación si es necesario
-};
-
-
     //form email
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
@@ -83,17 +67,6 @@ const [selectedLanguage, setSelectedLanguage] = useState('Español');
                     {/* <LinksFooter footerData={footerData}/> */}
             </div>
         </section>
-        <section className='end-footer'>
-                <div className='text-copy'><p>© 2024 DEO. Derechos reservados.</p></div>
-                <div className='select-language'>
-                    <button onClick={MouseMenuView}>{selectedLanguage}<img src="./icons/flecha-derecha.png" alt="flecha-derecha.png" /></button>
-                    <ul className={`language-list ${menuVisible ? 'active' : ''}`}>
-                        <li onClick={() => handleLanguageChange('Español')}>Español</li>
-                        <hr />
-                        <li onClick={() => handleLanguageChange('English')}>English</li>
-                    </ul>
-                </div>
-            </section>
     </footer>
     )
 }
