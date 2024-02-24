@@ -11,7 +11,7 @@ export function Header(){
     return(
         <nav className="menu">
             <header className="menu-content">
-                <Link className="Logo-menu" to={"/"} onClick={scrollToTop}><img src="icons/deo.png" alt="Logo" />DEO</Link>
+                <Link className="Logo-menu" to={"/"}><img src="icons/deo.png" alt="Logo" />DEO</Link>
                 <ul className="menu-items">
                     <li className="items"><Link to="home" smooth={true} duration={500} offset={-100}>Home</Link></li>
                     <li className="items"><Link to="info" smooth={true} duration={500} offset={-100}>Info</Link></li>

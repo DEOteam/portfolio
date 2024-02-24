@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter as Router} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom';
 
 import { LanguageProvider } from './context/LanguageContext.jsx'
 

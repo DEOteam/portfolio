@@ -1,0 +1,21 @@
+{
+    "name": "DEO",
+    "short_name": "DEO",
+    "description": "Portafolio de la organizacion Digital Engine Organization, en cargados en el desarrollo web",
+    "icons":[
+        {
+            "src": "../icons/deo192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "../icons/deo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url":"/",
+    "display": "standalone",
+    "background_color": "#15151b",
+    "theme_color": "#15151b"
+}
